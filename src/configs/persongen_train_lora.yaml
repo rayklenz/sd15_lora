@@ -6,7 +6,7 @@ trainer:
   batch_size: 1
   num_epochs: 5
   max_train_steps: 150
-  learning_rate: 5e-5
+  learning_rate: 5e-5    # в коллабе для 2й модели использовалось все другие значения
   save_dir: "saved/lora"
   log_freq: 10
 

@@ -91,9 +91,9 @@ def main(cfg: DictConfig):
         },
         {
             "name": "Фэнтези (полный)",
-            "prompt": f"a magical sks bird, full body, entire bird visible, face visible, bird anatomy, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, bird wings, bird legs, bird beak, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
-            "negative": NEGATIVE_BOOST + ", realistic, close-up, portrait, oversaturated, neon, rainbow, gaudy, spiky, heavy, woman, female, human, person, face of woman, human features, humanoid, feathers without bird, abstract"
-        },
+            "prompt": f"a magical sks bird, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "negative": NEGATIVE_BOOST + ", realistic, ugly, oversaturated, neon, spiky, heavy"
+        },  #!!!!!!!!!!!!!!!!
         {
             "name": "Акварель (полный)",
             "prompt": f"a sks bird, full body, entire bird visible, face visible, watercolor painting, wet on wet, artistic, soft textures, beautiful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
@@ -155,9 +155,9 @@ def main(cfg: DictConfig):
         },
         {
             "name": "Фэнтези (средний)",
-            "prompt": f"a magical sks bird, medium shot, upper body visible, face visible, bird anatomy, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, bird wings, bird head, bird beak, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
-            "negative": NEGATIVE_BOOST + ", realistic, close-up, far away, oversaturated, neon, rainbow, spiky, cactus-like, woman, female, human, person, human face, humanoid, feathers without bird"
-        },
+            "prompt": f"a magical sks bird, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "negative": NEGATIVE_BOOST + ", realistic, ugly, oversaturated, neon, spiky, heavy"
+        }, #!!!!!
         {
             "name": "Акварель (средний)",
             "prompt": f"a sks bird, medium shot, upper body visible, face visible, watercolor painting, wet on wet, artistic, soft textures, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
