@@ -46,7 +46,7 @@ def main(cfg: DictConfig):
     LORA_STRENGTH = 1.0
     NUM_INFERENCE_STEPS = cfg.inferencer.num_inference_steps
     RETRY_CROPPED = True          # перегенерировать обрезанные кадры
-    MAX_RETRIES = 2               # максимум попыток на стиль
+    MAX_RETRIES = 3               # максимум попыток на стиль
 
     # =====================================================
     # 👁️ ЛИЦО — ОБЯЗАТЕЛЬНО ВЕЗДЕ!
@@ -55,7 +55,7 @@ def main(cfg: DictConfig):
 
     # ПОЗИТИВНЫЕ ПРОМПТЫ ДЛЯ АНАТОМИИ И КОМПОЗИЦИИ
     ANATOMY_BOOST = "perfect bird anatomy, proper proportions, natural pose, realistic structure, two legs, two wings, single beak"
-    COMPOSITION_FULL = f"bird fully in frame, entire bird visible, whole body shown, centered, good composition, well-framed, no cropping, {FACE_BOOST}"
+    COMPOSITION_FULL = f"bird fully in frame, entire bird visible, whole body shown, centered, good composition, well-framed, no cropping, head fully visible, head not cropped, full head in frame, {FACE_BOOST}"
     COMPOSITION_PORTRAIT = f"close-up, face visible, head fully in frame, beak visible, portrait composition, centered face, {FACE_BOOST}"
     COMPOSITION_MEDIUM = f"medium shot, upper body visible, well-framed, bird centered, head fully visible, {FACE_BOOST}"
     UNIVERSAL_POSITIVE = "sharp focus, high quality, detailed, beautiful"
@@ -91,8 +91,8 @@ def main(cfg: DictConfig):
         },
         {
             "name": "Фэнтези (полный)",
-            "prompt": f"a magical sks bird, full body, entire bird visible, face visible, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
-            "negative": NEGATIVE_BOOST + ", realistic, close-up, portrait, oversaturated, neon, rainbow, gaudy, spiky, heavy"
+            "prompt": f"a magical sks bird, full body, entire bird visible, face visible, bird anatomy, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, bird wings, bird legs, bird beak, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "negative": NEGATIVE_BOOST + ", realistic, close-up, portrait, oversaturated, neon, rainbow, gaudy, spiky, heavy, woman, female, human, person, face of woman, human features, humanoid, feathers without bird, abstract"
         },
         {
             "name": "Акварель (полный)",
@@ -155,8 +155,8 @@ def main(cfg: DictConfig):
         },
         {
             "name": "Фэнтези (средний)",
-            "prompt": f"a magical sks bird, medium shot, upper body visible, face visible, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
-            "negative": NEGATIVE_BOOST + ", realistic, close-up, far away, oversaturated, neon, rainbow, spiky, cactus-like"
+            "prompt": f"a magical sks bird, medium shot, upper body visible, face visible, bird anatomy, fantasy art, ethereal, glowing feathers, mystical, shimmering, iridescent, soft lighting, delicate, feathery, bird wings, bird head, bird beak, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "negative": NEGATIVE_BOOST + ", realistic, close-up, far away, oversaturated, neon, rainbow, spiky, cactus-like, woman, female, human, person, human face, humanoid, feathers without bird"
         },
         {
             "name": "Акварель (средний)",
@@ -197,17 +197,20 @@ def main(cfg: DictConfig):
     # =====================================================
     # 🔍 ФУНКЦИЯ ПРОВЕРКИ ОБРЕЗАНИЯ
     # =====================================================
-    def check_if_cropped(image, threshold=0.02):
+    def check_if_cropped(image, threshold=0.05):
         img_array = np.array(image)
         h, w = img_array.shape[:2]
-        edge_top = img_array[0:5, :].mean()
-        edge_bottom = img_array[-5:, :].mean()
-        edge_left = img_array[:, 0:5].mean()
-        edge_right = img_array[:, -5:].mean()
-        center = img_array[h//2-10:h//2+10, w//2-10:w//2+10].mean()
+        # Проверяем края
+        edge_top = img_array[0:10, :].mean()
+        edge_bottom = img_array[-10:, :].mean()
+        edge_left = img_array[:, 0:10].mean()
+        edge_right = img_array[:, -10:].mean()
+        center = img_array[h // 2 - 20:h // 2 + 20, w // 2 - 20:w // 2 + 20].mean()
         edge_avg = (edge_top + edge_bottom + edge_left + edge_right) / 4
         diff = abs(edge_avg - center)
-        return diff < 10
+        # Дополнительно: если верхний край яркий (значит там не фон), то считаем обрезанным
+        top_bright = edge_top > (center * 0.8)  # порог подберите
+        return (diff < 10) or top_bright
 
     # =====================================================
     # 🎨 ГЕНЕРАЦИЯ С ПОВТОРАМИ ПРИ ОБРЕЗАНИИ
