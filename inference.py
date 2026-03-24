@@ -232,8 +232,8 @@ def main(cfg: DictConfig):
                     num_inference_steps=NUM_INFERENCE_STEPS,
                     guidance_scale=GUIDANCE_SCALE,
                     negative_prompt=style["negative"],
-                    height=512,
-                    width=512,
+                    height=768,
+                    width=768,
                     cross_attention_kwargs={"scale": LORA_STRENGTH}
                 ).images[0]
 
