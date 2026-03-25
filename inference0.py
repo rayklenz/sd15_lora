@@ -59,7 +59,7 @@ def main(cfg: DictConfig):
 
         # 🌈 ВЕСЁЛЫЕ И ЯРКИЕ
         {"name": "Радужный попугай", "prompt": f"single sks budgierigar, rainbow vibrant colors, colorful feathers, cheerful, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", dark, sad, gloomy"},
-        {"name": "Солнечный лучик", "prompt": f"single sks budgierigar, bright yellow and gold, shining feathers, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", dark, sad, gloomy"},
+        {"name": "Солнечный лучик", "prompt": f"single sks budgierigar, bright yellow and gold shining feathers, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", dark, sad, gloomy"},
         {"name": "Фестиваль красок", "prompt": f"single sks budgierigar, bright colorful feathers, vibrant, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", dark, sad, dull"},
         {"name": "Австралийское солнце", "prompt": f"single sks budgierigar, bright green and yellow feathers, sunny, wild, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", dark, sad, gloomy"},
 
@@ -81,25 +81,25 @@ def main(cfg: DictConfig):
         {"name": "Мечтательный волнистик", "prompt": f"single sks budgierigar, watercolor style, gentle blues, relaxed, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", aggressive, dark, bright, loud"},
 
         # 💕 РОМАНТИЧНЫЕ (две птицы)
-        {"name": "Валентинов день", "prompt": f"two sks budgierigar, romantic scene, heart shapes, red and pink, soft lighting, kissing, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", aggressive, dark, sad, alone, merged, conjoined"},
+        {"name": "Валентинов день", "prompt": f"two sks budgierigar, romantic scene, red and pink feathers, soft lighting, kissing, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", aggressive, dark, sad, alone, merged, conjoined"},
         {"name": "Облако влюбленных", "prompt": f"two sks budgierigar, soft pink clouds, romantic, couple, cuddling, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", alone, aggressive, dark, merged, conjoined"},
-        {"name": "Нежное прикосновение", "prompt": f"single sks budgierigar, soft peach and cream colors, romantic, gentle, affectionate, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", aggressive, dark, lonely"},
+        {"name": "Нежное прикосновение", "prompt": f"single sks budgierigar, soft peach and cream feathers, romantic, affectionate, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", aggressive, dark, lonely"},
 
         # ✨ МАГИЧЕСКИЕ
         {"name": "Секретная магия", "prompt": f"single sks budgierigar, glowing feathers, purple and gold, mystical, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry"},
-        {"name": "Звездный странник", "prompt": f"single sks budgierigar, starry night sky, cosmic, galaxy wings, ethereal, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry"},
-        {"name": "Волшебный волнистик", "prompt": f"single sks budgierigar, magic sparkles, fairy dust, glowing feathers, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry"},
+        {"name": "Звездный странник", "prompt": f"single sks budgierigar, cosmic feathers, galaxy wings, ethereal, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry"},
+        {"name": "Волшебный волнистик", "prompt": f"single sks budgierigar, glowing feathers, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry"},
 
         # 🤪 ЭКСЦЕНТРИЧНЫЕ
-        {"name": "Хаотичная радость", "prompt": f"single sks budgierigar, chaotic colors, splashes, wild, fun, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, organized, simple"},
-        {"name": "Карнавал безумия", "prompt": f"single sks budgierigar, vibrant, colorful, festive, fun, eccentric, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, ordinary, simple"},
-        {"name": "Сумасшедший волнистик", "prompt": f"single sks budgierigar, whimsical, playful, funny, cartoon style, bright colors, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, normal, realistic"},
+        {"name": "Хаотичная радость", "prompt": f"single sks budgierigar, chaotic colors, wild, fun, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, organized, simple"},
+        {"name": "Карнавал безумия", "prompt": f"single sks budgierigar, vibrant, colorful, fun, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, ordinary, simple"},
+        {"name": "Сумасшедший волнистик", "prompt": f"single sks budgierigar, playful, funny, cartoon style, bright colors, centered, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", calm, normal, realistic"},
 
         # 🎨 СПЕЦ-ОКРАСЫ (портретные, но без макросов)
-        {"name": "Классический волнистый", "prompt": f"single sks budgierigar, green and yellow, blue cere,  {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, cartoon"},
+        {"name": "Классический волнистый", "prompt": f"single sks budgierigar, green and yellow feathers, blue cere,  {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, cartoon"},
         {"name": "Голубой волнистик", "prompt": f"single sks budgierigar, sky blue feathers, white face, black markings, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry"},
-        {"name": "Лютино (желтый)", "prompt": f"single sks budgierigar, lutino variety, solid bright yellow, red eyes, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, green"},
-        {"name": "Альбинос", "prompt": f"single sks budgierigar, albino variety, pure white, red eyes, elegant, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, color"},
+        {"name": "Лютино (желтый)", "prompt": f"single sks budgierigar, lutino variety, solid bright yellow feathers, red eyes, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, green"},
+        {"name": "Альбинос", "prompt": f"single sks budgierigar, albino variety, pure white feathers, red eyes, elegant, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry, color"},
         {"name": "Опалин", "prompt": f"single sks budgierigar, opaline variety, soft gradient colors, pastel, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry"},
         {"name": "Хохлатый волнистик", "prompt": f"single sks budgierigar, crested variety, fluffy head feathers, adorable, {ANATOMY_BOOST}, {UNIVERSAL_POSITIVE}", "negative": NEGATIVE_BOOST + ", ugly, blurry"}
     ]
