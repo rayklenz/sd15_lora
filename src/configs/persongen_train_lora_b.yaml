@@ -22,8 +22,8 @@ datasets:
       _target_: src.datasets.dreambooth.DreamBoothTrainDataset
       data_path: "data"          # замените на путь к вашим фото
       placeholder_token: "sks"
-      class_name: "bird"
-      image_size: 512
+      class_name: "budgierigar"
+      image_size: 1024
 
 train_dataset_name: dreambooth
 
