@@ -7,7 +7,7 @@ from src.trainer.lora_trainer import LoraTrainer
 from src.logger.console_logger import ConsoleLogger
 from src.utils.helpers import set_seed
 
-@hydra.main(version_base=None, config_path="src/configs", config_name="persongen_train_lora")
+@hydra.main(version_base=None, config_path="src/configs", config_name="persongen_train_lora_b")
 def main(cfg: DictConfig):
     set_seed(42)
 
