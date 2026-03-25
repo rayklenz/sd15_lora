@@ -38,7 +38,7 @@ def main(cfg: DictConfig):
 
     # ========== НАСТРОЙКИ ==========
     GUIDANCE_SCALE = 7.5
-    LORA_STRENGTH = 1.0
+    LORA_STRENGTH = 0.7
     NUM_INFERENCE_STEPS = cfg.inferencer.num_inference_steps
     MAX_RETRIES = 3
 
@@ -144,8 +144,8 @@ def main(cfg: DictConfig):
                     num_inference_steps=NUM_INFERENCE_STEPS,
                     guidance_scale=GUIDANCE_SCALE,
                     negative_prompt=style["negative"],
-                    height=1024,
-                    width=1024,
+                    height=512,
+                    width=512,
                     cross_attention_kwargs={"scale": LORA_STRENGTH}
                 ).images[0]
 
