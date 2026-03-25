@@ -10,6 +10,6 @@ model:
 
 inferencer:
   ckpt_dir: "saved0/lora_budgie"
-  prompt: "a photo of a sks bird, detailed feathers, realistic"
-  num_inference_steps: 45
+  prompt: "a photo of a sks budgierigar, detailed feathers, realistic"
+  num_inference_steps: 25
   output_path: "output.png"
