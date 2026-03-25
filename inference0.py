@@ -74,180 +74,180 @@ def main(cfg: DictConfig):
         # 🎀 МИЛЫЕ И ПАСТЕЛЬНЫЕ
         {
             "name": "Нежная лаванда",
-            "prompt": f"a cute sks budgerigar, soft lavender and cream colors, pastel, dreamy atmosphere, delicate, kawaii style, fluffy feathers, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a cute sks bird, budgerigar, soft lavender and cream colors, pastel, dreamy atmosphere, delicate, kawaii style, fluffy feathers, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, aggressive, sharp, realistic, scary"
         },
         {
             "name": "Сахарная вата",
-            "prompt": f"a sks budgerigar, cotton candy colors, soft pink and mint green, fluffy texture, sweet, magical, fairy tale style, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a sks bird, budgerigar, cotton candy colors, soft pink and mint green, fluffy texture, sweet, magical, fairy tale style, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, scary, realistic, aggressive"
         },
         {
             "name": "Лунная нежность",
-            "prompt": f"a sks budgerigar, moonlight pastel, silver and soft blue, gentle glow, ethereal, dreamy, peaceful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a sks bird, budgerigar, moonlight pastel, silver and soft blue, gentle glow, ethereal, dreamy, peaceful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, bright, aggressive, scary"
         },
         {
             "name": "Весенняя зелень",
-            "prompt": f"a cute sks budgerigar, soft lime and yellow, spring pastels, fresh, gentle, adorable, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a cute sks bird, budgerigar, soft lime and yellow, spring pastels, fresh, gentle, adorable, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, aggressive, scary"
         },
         # 🌈 ВЕСЁЛЫЕ И ЯРКИЕ
         {
             "name": "Радужный попугай",
-            "prompt": f"a joyful sks budgerigar, rainbow colors, vibrant, happy, celebration, colorful feathers, cheerful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a joyful sks bird, budgerigar, rainbow colors, vibrant, happy, celebration, colorful feathers, cheerful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, sad, dull, gloomy, scary"
         },
         {
             "name": "Солнечный лучик",
-            "prompt": f"a happy sks budgerigar, bright yellow and gold, sunshine, energetic, playful, summer vibe, radiant, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a happy sks bird, budgerigar, bright yellow and gold, sunshine, energetic, playful, summer vibe, radiant, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, sad, gloomy, night, scary"
         },
         {
             "name": "Фестиваль красок",
-            "prompt": f"a joyful sks budgerigar, neon colors, party vibe, energetic, celebration, vibrant, explosive colors, fun, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a joyful sks bird, budgerigar, neon colors, party vibe, energetic, celebration, vibrant, explosive colors, fun, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, sad, dull, scary, aggressive"
         },
         {
             "name": "Австралийское солнце",
-            "prompt": f"a happy sks budgerigar, bright green and yellow, australian outback, sunny, cheerful, wild budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a happy sks bird, budgerigar, bright green and yellow, australian outback, sunny, cheerful, wild budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, sad, gloomy, scary"
         },
         # 🎈 ИГРИВЫЕ И БЫСТРЫЕ (здесь используем композицию "medium shot", чтобы подчеркнуть движение)
         {
             "name": "Вихрь перьев",
-            "prompt": f"a playful sks budgerigar, dynamic motion, blurred wings, speed lines, energetic, action, fun, mischievous, flying fast, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a playful sks bird, budgerigar, dynamic motion, blurred wings, speed lines, energetic, action, fun, mischievous, flying fast, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", static, still, sad, dark, scary"
         },
         {
             "name": "Озорной волнистик",
-            "prompt": f"a mischievous sks budgerigar, swirling colors, playful, dynamic pose, cartoon style, energetic, fun, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a mischievous sks bird, budgerigar, swirling colors, playful, dynamic pose, cartoon style, energetic, fun, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", still, sad, dark, aggressive, scary"
         },
         {
             "name": "Летняя беззаботность",
-            "prompt": f"a playful sks budgerigar, bright turquoise and lime, summer vibes, carefree, energetic, joyful, dynamic, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a playful sks bird, budgerigar, bright turquoise and lime, summer vibes, carefree, energetic, joyful, dynamic, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", dark, sad, gloomy, aggressive, scary"
         },
         {
             "name": "Быстрый полет",
-            "prompt": f"a swift sks budgerigar, speed motion, dynamic blur, energetic, action shot, fast flying, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a swift sks bird, budgerigar, speed motion, dynamic blur, energetic, action shot, fast flying, {ANATOMY_BOOST}, {COMPOSITION_MEDIUM}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", static, still, slow, sad"
         },
         # 🌑 ЗЛЫЕ И ТЁМНЫЕ
         {
             "name": "Грозовая туча",
-            "prompt": f"an angry sks budgerigar, dark storm clouds, lightning, dramatic lighting, menacing, powerful, intense colors, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"an angry sks bird, budgerigar, dark storm clouds, lightning, dramatic lighting, menacing, powerful, intense colors, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", bright, happy, cute, pastel, peaceful"
         },
         {
             "name": "Теневой волнистик",
-            "prompt": f"a fierce sks budgerigar, dark and ominous, black and deep blue, glowing red eyes, aggressive, threatening, gothic style, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a fierce sks bird, budgerigar, dark and ominous, black and deep blue, glowing red eyes, aggressive, threatening, gothic style, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", cute, bright, happy, pastel, peaceful"
         },
         {
             "name": "Пламя гнева",
-            "prompt": f"an enraged sks budgerigar, fiery colors, red and black, intense, dramatic, angry, powerful, aggressive stance, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"an enraged sks bird, budgerigar, fiery colors, red and black, intense, dramatic, angry, powerful, aggressive stance, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", cute, happy, pastel, bright, peaceful"
         },
         {
             "name": "Ночной охотник",
-            "prompt": f"a dark sks budgerigar, shadows, gothic style, mysterious, haunting, deep purple and black, eerie, intense, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a dark sks bird, budgerigar, shadows, gothic style, mysterious, haunting, deep purple and black, eerie, intense, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", cute, bright, happy, pastel, peaceful"
         },
         # 😌 СПОКОЙНЫЕ И МЕДИТАТИВНЫЕ
         {
             "name": "Утренняя роса",
-            "prompt": f"a calm sks budgerigar, soft greens and blues, zen, peaceful, meditative, nature, quiet morning, serene, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a calm sks bird, budgerigar, soft greens and blues, zen, peaceful, meditative, nature, quiet morning, serene, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", aggressive, dark, scary, bright, loud"
         },
         {
             "name": "Лесное спокойствие",
-            "prompt": f"a peaceful sks budgerigar, forest colors, moss green and earth tones, tranquil, harmony, nature vibe, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a peaceful sks bird, budgerigar, forest colors, moss green and earth tones, tranquil, harmony, nature vibe, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", aggressive, scary, bright, neon, loud"
         },
         {
             "name": "Мечтательный волнистик",
-            "prompt": f"a dreamy sks budgerigar, soft watercolor, gentle blues, relaxed, peaceful, thoughtful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a dreamy sks bird, budgerigar, soft watercolor, gentle blues, relaxed, peaceful, thoughtful, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", aggressive, scary, loud, bright"
         },
         # 💕 РОМАНТИЧНЫЕ И НЕЖНЫЕ
         {
             "name": "Валентинов день",
-            "prompt": f"two separate sks budgerigars, each with distinct body, romantic scene, heart shapes, red and pink colors, love, valentine style, tender, soft lighting, kissing, two heads, four legs, two beaks, all faces visible, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"two separate sks bird, budgerigars, each with distinct body, romantic scene, heart shapes, red and pink colors, love, valentine style, tender, soft lighting, kissing, two heads, four legs, two beaks, all faces visible, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", aggressive, scary, dark, sad, alone, merged, conjoined, fused, one body with two heads, extra legs, missing legs, no face, blurred face, caterpillar-like, slug-like, no eyes, deformed"
         },
         {
             "name": "Облако влюбленных",
-            "prompt": f"two separate sks budgerigars, each with distinct body, together, soft pink clouds, romantic, couple, adorable, affectionate, lovebirds style, cuddling, two heads, four legs, two beaks, all faces visible, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"two separate sks bird, budgerigars, each with distinct body, together, soft pink clouds, romantic, couple, adorable, affectionate, lovebirds style, cuddling, two heads, four legs, two beaks, all faces visible, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", alone, aggressive, scary, dark, merged, conjoined, fused, one body with two heads, extra legs, missing legs, no face, blurred face, caterpillar-like, slug-like, no eyes, deformed"
         },
         {
             "name": "Нежное прикосновение",
-            "prompt": f"a loving sks budgerigar, soft peach and cream colors, romantic, gentle, affectionate, tender moment, sweet budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a loving sks bird, budgerigar, soft peach and cream colors, romantic, gentle, affectionate, tender moment, sweet budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", aggressive, dark, scary, lonely"
         },
         # ✨ МАГИЧЕСКИЕ И ЗАГАДОЧНЫЕ
         {
             "name": "Секретная магия",
-            "prompt": f"a mysterious sks budgerigar, magical aura, purple and gold, mystical, enigmatic, secret power, enchanting, fantasy budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a mysterious sks bird, budgerigar, magical aura, purple and gold, mystical, enigmatic, secret power, enchanting, fantasy budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry, low quality"
         },
         {
             "name": "Звездный странник",
-            "prompt": f"a magical sks budgerigar, starry night, cosmic, celestial, galaxy wings, mystical, dreamy, fantasy, space budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a magical sks bird, budgerigar, starry night, cosmic, celestial, galaxy wings, mystical, dreamy, fantasy, space budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry, low quality"
         },
         {
             "name": "Волшебный волнистик",
-            "prompt": f"an enchanted sks budgerigar, magic sparkles, fairy dust, mystical glow, fantasy art, magical creature, spellbinding, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"an enchanted sks bird, budgerigar, magic sparkles, fairy dust, mystical glow, fantasy art, magical creature, spellbinding, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ordinary, ugly, blurry, realistic"
         },
         # 🤪 ЭКСЦЕНТРИЧНЫЕ И БЕЗУМНЫЕ
         {
             "name": "Хаотичная радость",
-            "prompt": f"a crazy sks budgerigar, chaotic colors, splashes, unpredictable, fun, psychedelic, wild, energetic mess, silly budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a crazy sks bird, budgerigar, chaotic colors, splashes, unpredictable, fun, psychedelic, wild, energetic mess, silly budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", calm, organized, simple, boring"
         },
         {
             "name": "Карнавал безумия",
-            "prompt": f"a wild sks budgerigar, carnival style, mismatched patterns, bright chaos, fun, crazy, unique, eccentric, party budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a wild sks bird, budgerigar, carnival style, mismatched patterns, bright chaos, fun, crazy, unique, eccentric, party budgie, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", calm, ordinary, simple, boring"
         },
         {
             "name": "Сумасшедший волнистик",
-            "prompt": f"a crazy budgerigar, surreal colors, absurd poses, funny, whimsical, cartoon chaos, hilarious, budgie antics, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a crazy bird, budgerigar, surreal colors, absurd poses, funny, whimsical, cartoon chaos, hilarious, budgie antics, {ANATOMY_BOOST}, {COMPOSITION_FULL}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", calm, normal, realistic, boring"
         },
         # 🎨 СПЕЦИАЛЬНЫЕ ДЛЯ ВОЛНИСТЫХ ПОПУГАЕВ (портретные, используем COMPOSITION_PORTRAIT)
         {
             "name": "Классический волнистый",
-            "prompt": f"a beautiful sks budgerigar, classic green and yellow, black scalloped markings, blue cere, detailed feathers, realistic, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a beautiful sks bird, budgerigar, classic green and yellow, black scalloped markings, blue cere, detailed feathers, realistic, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality, cartoon"
         },
         {
             "name": "Голубой волнистик",
-            "prompt": f"a stunning sks budgerigar, sky blue feathers, white face, black markings, cobalt, beautiful, detailed, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a stunning sks bird, budgerigar, sky blue feathers, white face, black markings, cobalt, beautiful, detailed, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality"
         },
         {
             "name": "Лютино (желтый)",
-            "prompt": f"a beautiful sks budgerigar, lutino variety, bright yellow, red eyes, sunshine, vibrant, stunning, rare color, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a beautiful sks bird, budgerigar, lutino variety, bright yellow, red eyes, sunshine, vibrant, stunning, rare color, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality, green"
         },
         {
             "name": "Альбинос",
-            "prompt": f"a beautiful sks budgerigar, albino variety, pure white, red eyes, pristine, elegant, rare, beautiful, angelic, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a beautiful sks bird, budgerigar, albino variety, pure white, red eyes, pristine, elegant, rare, beautiful, angelic, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality, color"
         },
         {
             "name": "Опалин",
-            "prompt": f"a beautiful sks budgerigar, opaline variety, soft gradient colors, pastel, elegant, rare mutation, stunning feathers, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a beautiful sks bird, budgerigar, opaline variety, soft gradient colors, pastel, elegant, rare mutation, stunning feathers, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality"
         },
         {
             "name": "Хохлатый волнистик",
-            "prompt": f"a cute sks budgerigar, crested variety, fluffy head feathers, adorable, rare mutation, cute, charming, unique, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
+            "prompt": f"a cute sks bird, budgerigar, crested variety, fluffy head feathers, adorable, rare mutation, cute, charming, unique, {ANATOMY_BOOST}, {COMPOSITION_PORTRAIT}, {UNIVERSAL_POSITIVE}",
             "negative": NEGATIVE_BOOST + ", ugly, blurry, low quality"
         }
     ]
